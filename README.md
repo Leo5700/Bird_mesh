@@ -71,8 +71,8 @@ void draw() {
   float[][] points = new float[bn][2];
 
   for (int i = 0; i < bn; i++) {
-    points[i][0] = bd.getCentroidX(i)*width/camwidth;
-    points[i][1] = bd.getCentroidY(i)*height/camheight;
+    points[i][0] = bd.getCentroidX(i) * width/camwidth;
+    points[i][1] = bd.getCentroidY(i) * height/camheight;
   }
 
   Delaunay myDelaunay = new Delaunay( points );
@@ -96,3 +96,5 @@ void onCameraPreviewEvent() {
 }
 
 ```
+
+Ну и последнее, конечно, птицы! Осталось найти птиц, парящих на фоне серого неба, навести на них камеру и наслаждаться триангуляцией. Так, какие к черту птицы, бери маркер, ставь на салфетке кляксы и смотри что получается. Нет маркера? Нет бумаги? А, чорт с тобой, смотри видео,  https://youtu.be/1Z67ETATIQ0 не парься, чувак. 
