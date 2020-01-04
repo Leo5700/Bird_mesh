@@ -22,8 +22,6 @@
 
 Ниже, привожу код. Если Вы перфекционист хотя бы на 1% &minus; закройте глаза.
 
-TODO вставить крайний код
-
 
 ```C
 /*
@@ -53,7 +51,7 @@ void setup() {
 
   camwidth = 176;
   camheight = 144;
-  cam = new KetaiCamera(this, camwidth, camheight, 10); // размер и частота кадров, получаемых с камеры
+  cam = new KetaiCamera(this, camwidth, camheight, 10); // размер и частота кадров камеры
   cam.start();
 
   bd = new Detector(this, 255); // порог чувствительности
